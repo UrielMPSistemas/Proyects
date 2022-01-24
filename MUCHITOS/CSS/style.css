@@ -1,66 +1,96 @@
-:root{
-    --primary-color-green:#35A84A;
-    --secondary-color-purple:#E767F5;
-    --magenta:#9E3EA8;
-    --orange:#F56436;
-    --warm-black:#201e1c;
-    --black:#282623;
-    --grey:#bababa;
-    --off-white:#faf8f7;
-    --just-white:#fff;
+:root {
+    --primary-color-green: #35A84A;
+    --secondary-color-purple: #E767F5;
+    --magenta: #9E3EA8;
+    --orange: #F56436;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-size: 62.5%;
-    font-family: 'Bree Serif', serif;
-    font-family: 'Bad Script', cursive;
     font-family: 'Raleway', sans-serif;
     /*
-    
+    font-family: 'Bree Serif', serif;
+    font-family: 'Bad Script', cursive;
     font-family: 'Nanum Brush Script', cursive;
     font-family: 'Nanum Pen Script', cursive;
     font-family: 'Raleway', sans-serif;
     */
 }
-header{
-    position: relative;
+
+header {
+    /*position: relative;
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-width: 320px;
-    max-width: 1920px;
-    height:480px;
-    min-height: 50vh;
+    height: 70%;
     text-align: center;
-    background: rgb(53,168,79);
-    background: linear-gradient(180deg, rgba(53,168,79,1) 0%, rgba(103,204,245,1) 100%);
+    background: rgb(53, 168, 79);
+    background: linear-gradient(180deg, rgba(53, 168, 79, 1) 0%, rgba(33, 150, 243, 1) 100%);*/
 }
-header img{
+
+
+/*COVER*/
+
+.Section--Logo {
+    width: 100%;
+    padding-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*logo section*/
+
+.Logo--container {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.Logo--container img {
     width: 100%;
     align-self: center;
     max-width: 1000px;
 }
 
-.header--title-container{
+.Logo--title-container {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     text-align: center;
     align-self: center;
+    margin: auto;
 }
-.header--title-container h1{
+
+.Logo--title-container h1 {
+    margin-top: 150px;
     margin-bottom: 25px;
-    font-size: 4.4rem;
+    font-size: 6.4rem;
     font-weight: bold;
-    line-height: 4.6rem;
+    line-height: 6.6rem;
     color: var(--just-white);
 }
-.header--title-container p{
+
+.Logo--title-container p {
+    font-family: 'Bad Script', cursive;
     margin-top: 8px;
     font-size: 2.4rem;
     font-weight: 500;
@@ -69,54 +99,64 @@ header img{
 }
 
 
+/*WAVE INICIO*/
 
-.container-animated{
-    position: relative;
-    /*display: flex;*/
-    flex-direction: column;
-    justify-content: center;
+.bg_color {
     width: 100%;
-    min-width: 320px;
-    max-width: 1920px;
-    /*height:400px;*/
-}
-
-.animated-wave{
+    height: 70%;
+    background: linear-gradient(180deg, rgba(53, 168, 79, 1) 0%, rgba(33, 150, 243, 1) 100%);
     position: absolute;
-    width: 100%;
-    min-width: 320px;
-    max-width: 1920px;
-    
-}
-.animated-wave2{
-    position: absolute;
-    width: 100%;
-    min-width: 320px;
-    max-width: 1920px;
+    top: 0;
+    z-index: -1;
 }
 
-.w1{
+.wave {
+    width: 6000px;
+    height: 100%;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    background-image: url(../Image/wave.svg);
+    background-position: bottom;
+    z-index: -1;
+}
+
+.w1 {
     animation: w1 7s linear infinite;
 }
-.w2{
-    animation: w2 7s linear infinite;
+
+.w2 {
+    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+    opacity: 0.5;
 }
 
 @keyframes w1 {
-    0%{
-        left: 0%; 
+    0% {
+        margin-left: 0;
     }
-    100%{
-        left:95%;
+    100% {
+        margin-left: -1600px;
     }
-    
 }
+
 @keyframes w2 {
-    0%{
-        left: -95%; 
+    0% {
+        margin-left: 0;
     }
-    100%{
-        left:0%;
+    100% {
+        margin-left: -1600px;
     }
-    
 }
+
+@keyframes desplazamiento {
+    0%,
+    100% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+/*WAVE FINAL*/
