@@ -28,19 +28,7 @@ html {
     */
 }
 
-header {
-    /*position: relative;
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 70%;
-    text-align: center;
-    background: rgb(53, 168, 79);
-    background: linear-gradient(180deg, rgba(53, 168, 79, 1) 0%, rgba(33, 150, 243, 1) 100%);*/
-}
+header {}
 
 
 /*COVER*/
@@ -68,7 +56,7 @@ header {
 .Logo--container img {
     width: 100%;
     align-self: center;
-    max-width: 1000px;
+    max-width: 700px;
 }
 
 .Logo--title-container {
@@ -100,15 +88,17 @@ header {
 }
 
 .Logo--button {
+    position: relative;
     margin: auto;
     width: 180px;
     font-size: 2rem;
     font-weight: 500;
-    padding: 20px;
+    padding: 15px;
     background-color: var(--magenta);
     border-radius: 50px;
     text-decoration: none;
     color: white;
+    top: 30px;
 }
 
 
@@ -173,3 +163,27 @@ header {
 
 
 /*WAVE FINAL*/
+
+.Section--services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.service {
+    width: 250px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 50px;
+}
