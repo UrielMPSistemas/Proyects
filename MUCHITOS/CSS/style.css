@@ -1,0 +1,122 @@
+:root{
+    --primary-color-green:#35A84A;
+    --secondary-color-purple:#E767F5;
+    --magenta:#9E3EA8;
+    --orange:#F56436;
+    --warm-black:#201e1c;
+    --black:#282623;
+    --grey:#bababa;
+    --off-white:#faf8f7;
+    --just-white:#fff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Raleway', sans-serif;
+    /*
+    
+    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Raleway', sans-serif;
+    */
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1920px;
+    height:480px;
+    min-height: 50vh;
+    text-align: center;
+    background: rgb(53,168,79);
+    background: linear-gradient(180deg, rgba(53,168,79,1) 0%, rgba(103,204,245,1) 100%);
+}
+header img{
+    width: 100%;
+    align-self: center;
+    max-width: 1000px;
+}
+
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-container h1{
+    margin-bottom: 25px;
+    font-size: 4.4rem;
+    font-weight: bold;
+    line-height: 4.6rem;
+    color: var(--just-white);
+}
+.header--title-container p{
+    margin-top: 8px;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    color: var(--warm-black);
+}
+
+
+
+.container-animated{
+    position: relative;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1920px;
+    /*height:400px;*/
+}
+
+.animated-wave{
+    position: absolute;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1920px;
+    
+}
+.animated-wave2{
+    position: absolute;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1920px;
+}
+
+.w1{
+    animation: w1 7s linear infinite;
+}
+.w2{
+    animation: w2 7s linear infinite;
+}
+
+@keyframes w1 {
+    0%{
+        left: 0%; 
+    }
+    100%{
+        left:95%;
+    }
+    
+}
+@keyframes w2 {
+    0%{
+        left: -95%; 
+    }
+    100%{
+        left:0%;
+    }
+    
+}
