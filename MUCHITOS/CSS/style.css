@@ -5,7 +5,7 @@
     --orange: #F56436;
     --warm-black: #201e1c;
     --black: #282623;
-    --grey: #bababa;
+    --grey: #e7e7e7;
     --off-white: #faf8f7;
     --just-white: #fff;
 }
@@ -26,6 +26,9 @@ html {
     font-family: 'Nanum Pen Script', cursive;
     font-family: 'Raleway', sans-serif;
     */
+}
+body{
+    background-color: var(--grey);
 }
 
 header {}
@@ -164,6 +167,22 @@ header {}
 
 /*WAVE FINAL*/
 
+.Section--services{
+    padding: 15px;
+}
+
+h2{
+    font-size: 3.0rem;
+    margin-bottom: 16px;
+}
+h3{
+    font-size: 2.0rem;
+    margin: 10px;
+}
+p{
+    font-size: 1.6rem;
+}
+
 .Section--services {
     display: flex;
     flex-direction: column;
@@ -183,6 +202,10 @@ header {}
     margin-bottom: 25px;
 }
 
+.service img {
+    width: 100%;
+    border-radius: 50px;
+}
 .service img {
     width: 100%;
     border-radius: 50px;
