@@ -74,9 +74,9 @@ header {}
 .Logo--title-container h1 {
     margin-top: 125px;
     margin-bottom: 25px;
-    font-size: 5.0rem;
+    font-size: 2.8rem;
     font-weight: bold;
-    line-height: 6.6rem;
+    line-height: 3rem;
     color: var(--just-white);
 }
 
@@ -84,8 +84,8 @@ header {}
     font-family: 'Bad Script', cursive;
     margin-top: 16px;
     margin-bottom: 16px;
-    font-size: 3.4rem;
-    font-weight: 500;
+    font-size: 2.4rem;
+    font-weight: bold;
     line-height: 2.8rem;
     color: var(--warm-black);
 }
@@ -110,7 +110,7 @@ header {}
 .bg_color {
     width: 100%;
     height: 70%;
-    background: linear-gradient(180deg, rgba(53, 168, 79, 1) 0%, rgba(33, 150, 243, 1) 100%);
+    background: linear-gradient(180deg, rgb(13, 217, 253) 0%, rgba(33, 150, 243, 1) 100%);
     position: absolute;
     top: 0;
     z-index: -1;
@@ -120,7 +120,7 @@ header {}
     width: 6000px;
     height: 100%;
     position: absolute;
-    top: 150px;
+    top: 197px;
     left: 0;
     background-image: url(../Image/wave.svg);
     background-position: bottom;
@@ -157,7 +157,7 @@ header {}
 @keyframes desplazamiento {
     0%,
     100% {
-        transform: translateY(-25px);
+        transform: translateY(-45px);
     }
     50% {
         transform: translateY(10px);
@@ -167,8 +167,12 @@ header {}
 
 /*WAVE FINAL*/
 
-.Section--services{
+.Section{
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 h2{
@@ -181,13 +185,6 @@ h3{
 }
 p{
     font-size: 1.6rem;
-}
-
-.Section--services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .services-container {
@@ -206,7 +203,54 @@ p{
     width: 100%;
     border-radius: 50px;
 }
-.service img {
+
+.section-redes{
+    background-color: var(--secondary-color-purple);
+    background: linear-gradient(180deg, var(--secondary-color-purple) 0%, var(--secondary-color-purple) 100%);
     width: 100%;
-    border-radius: 50px;
+    padding-top: 60px;
+    padding-bottom: 22px;
+}
+.wave-opacity{
+    background-image: url(../Image/wavesOpacity.svg);
+    width: 100%;
+    height: 32px;
+    position: absolute;
+}
+.wave-opacity-bottom{
+    background-color: var(--grey);
+    background-image: url(../Image/wavesOpacitybottom.svg);
+    background-position: bottom;
+    width: 100%;
+    height: 32px;
+    position: absolute;
+}
+
+.section-redes .services-container {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    max-width: 500px;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.section-redes .service {
+    width: 20%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.section-redes .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(180deg, rgb(13, 217, 253) 0%, rgba(33, 150, 243, 1) 100%);
+}
+ .fa-facebook-f,.fa-tiktok,.fa-instagram-square{
+    color: var(--magenta);
+    font-size: 50px;
 }
