@@ -282,3 +282,41 @@ p {
     font-size: 60px;
     background: linear-gradient(12deg, rgba(180, 173, 58, 1) 0%, rgba(253, 153, 29, 1) 32%, rgba(207, 69, 252, 1) 100%);
 }
+
+.section-gallery {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4px;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery img:nth-child(1) {
+    grid-area: 1/1/span 2/span 2;
+}
+
+.gallery img:nth-child(3) {
+    grid-area: 3/2/span 2/span 1;
+    height: 100%;
+}
+
+.gallery img:nth-child(5) {
+    grid-area: 5/1/span 1/span 2;
+    height: 100%;
+}
+
+.gallery img:nth-child(6) {
+    grid-area: 6/1/span 2/span 1;
+    height: 100%;
+}
