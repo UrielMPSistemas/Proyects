@@ -27,7 +27,8 @@ html {
     font-family: 'Raleway', sans-serif;
     */
 }
-body{
+
+body {
     background-color: var(--grey);
 }
 
@@ -167,7 +168,7 @@ header {}
 
 /*WAVE FINAL*/
 
-.Section{
+.Section {
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -175,18 +176,24 @@ header {}
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 3.0rem;
     margin-bottom: 16px;
 }
 
-h3{
+h3 {
     font-size: 2.0rem;
     margin: 10px;
 }
 
-p{
+p {
     font-size: 1.6rem;
+}
+
+.services--title {
+    width: 70%;
+    min-width: 300px;
+    max-width: 700px;
 }
 
 .services-container {
@@ -206,20 +213,22 @@ p{
     border-radius: 50px;
 }
 
-.section-redes{
+.section-redes {
     background-color: var(--secondary-color-purple);
     background: linear-gradient(180deg, var(--secondary-color-purple) 0%, var(--secondary-color-purple) 100%);
     width: 100%;
     padding-top: 60px;
     padding-bottom: 22px;
 }
-.wave-opacity{
+
+.wave-opacity {
     background-image: url(../Image/wavesOpacity.svg);
     width: 100%;
     height: 32px;
     position: absolute;
 }
-.wave-opacity-bottom{
+
+.wave-opacity-bottom {
     background-color: var(--grey);
     background-image: url(../Image/wavesOpacitybottom.svg);
     background-position: bottom;
@@ -231,7 +240,8 @@ p{
 .section-redes .services-container {
     display: flex;
     flex-direction: row;
-    width: 320px;
+    width: 40%;
+    min-width: 300px;
     max-width: 500px;
     justify-content: space-between;
     margin-top: 0;
@@ -243,16 +253,70 @@ p{
     margin-bottom: 25px;
 }
 
-.section-redes .icon{
+.section-redes .icon {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 40px;
     width: 80px;
     height: 80px;
+    box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.fa-facebook-f {
+    color: var(--just-white);
+    font-size: 55px;
     background: linear-gradient(180deg, rgb(13, 217, 253) 0%, rgba(33, 150, 243, 1) 100%);
 }
- .fa-facebook-f,.fa-tiktok,.fa-instagram-square{
-    color: var(--magenta);
+
+.fa-tiktok {
+    color: var(--just-white);
     font-size: 50px;
+    background: linear-gradient(14deg, rgba(0, 0, 0, 1) 0%, rgba(50, 49, 49, 1) 100%);
+}
+
+.fa-instagram-square {
+    color: var(--just-white);
+    font-size: 60px;
+    background: linear-gradient(12deg, rgba(180, 173, 58, 1) 0%, rgba(253, 153, 29, 1) 32%, rgba(207, 69, 252, 1) 100%);
+}
+
+.section-gallery {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4px;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery img:nth-child(1) {
+    grid-area: 1/1/span 2/span 2;
+}
+
+.gallery img:nth-child(3) {
+    grid-area: 3/2/span 2/span 1;
+    height: 100%;
+}
+
+.gallery img:nth-child(5) {
+    grid-area: 5/1/span 1/span 2;
+    height: 100%;
+}
+
+.gallery img:nth-child(6) {
+    grid-area: 6/1/span 2/span 1;
+    height: 100%;
 }
