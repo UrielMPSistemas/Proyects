@@ -191,7 +191,7 @@ p {
 }
 
 .services--title {
-    width: 70%;
+    /*width: 70%;*/
     min-width: 300px;
     max-width: 700px;
 }
@@ -265,19 +265,19 @@ p {
     -moz-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.fa-facebook-f {
+.section-redes .fa-facebook-f {
     color: var(--just-white);
     font-size: 55px;
     background: linear-gradient(180deg, rgb(13, 217, 253) 0%, rgba(33, 150, 243, 1) 100%);
 }
 
-.fa-tiktok {
+.section-redes .fa-tiktok {
     color: var(--just-white);
     font-size: 50px;
     background: linear-gradient(14deg, rgba(0, 0, 0, 1) 0%, rgba(50, 49, 49, 1) 100%);
 }
 
-.fa-instagram-square {
+.section-redes .fa-instagram-square {
     color: var(--just-white);
     font-size: 60px;
     background: linear-gradient(12deg, rgba(180, 173, 58, 1) 0%, rgba(253, 153, 29, 1) 32%, rgba(207, 69, 252, 1) 100%);
@@ -286,7 +286,7 @@ p {
 .section-gallery {
     margin-top: 50px;
     margin-bottom: 50px;
-}
+} 
 
 .gallery {
     margin-top: 30px;
@@ -320,3 +320,61 @@ p {
     grid-area: 6/1/span 2/span 1;
     height: 100%;
 }
+
+.formulario input, textarea{
+    display: block;
+    width: 300px;
+    font-size: 1.6rem;
+    padding: 10px 5px;
+    margin: 15px;
+    text-align: center;
+    border: 1px solid #a19a9a;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formulario input[type="submit"]{
+    background-color: var(--magenta);
+    color: whitesmoke;
+    width: 150px;
+    margin: 0 auto;
+    
+}
+
+.section-contac{
+    margin-bottom: 30px;
+}
+
+.Section-container-contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+    
+}
+
+footer .section-contac{
+    background-color: var(--warm-black);
+    padding: 15px;
+    width: 100%;
+    color: whitesmoke;
+    background: linear-gradient(180deg, rgba(33, 150, 243, 1) 0%,  rgb(13, 217, 253) 100%);
+    text-align: center;
+     margin-bottom: 0px;
+}
+
+
+footer .icon{
+    font-size: 30px;
+    margin: 10px;
+
+}
+
+
+footer img{
+    margin-top: 10px;
+    width: 100px;
+}
+
+
